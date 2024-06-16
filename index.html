@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="telkom.png" rel="stylesheet" />
+    <title>Bhakti Ragil Varino | Upload File</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--white"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+        </div>
+    </div>
+    <div class="hero">
+        <h2 class="sd">Selamat Datang</h2>
+        <div class="profile">
+            <div class="biodata">
+                <div class="sapa">
+                    <h2>Hallo</h2>
+                    <img src="hallo.png" alt="">
+                </div>
+                <p>Ini Adalah Biodata Lengkap Saya</p>
+                <h3>Nama : Bhakti Ragil Varino</h3>
+                <h3>Nim : 2020220047</h3>
+                <h3>Prodi : Komputerisasi Akuntansi</h3>
+                <h3>Universitas : Universitas Prabumulih</h3>
+            </div>
+            <div class="foto">
+                <img class="foto-profile" src="fotoprofil.jpg" alt="">
+            </div>
+        </div>
+        <h2>Upload File</h2>
+        <p>Masukan File Dibawah Dengan Baik dan Benar</p>
+        <div class="popup">
+            <div class="popup-container">
+                <div class="popup-header">
+                    <div class="button-container">
+                        <button class="close-btn circle-btn red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <button class="close-btn circle-btn yellow">
+                            <i class="fa-solid fa-window-minimize"></i>
+                        </button>
+                        <button class="maximize-btn circle-btn green">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="popup-body about-container">
+                    <div class="img-frame">
+                        <img src="logo.png" alt="" />
+                    </div>
+                    <div class="hero-content">
+                        <form action="upload.php" method="POST" enctype="multipart/form-data">
+                            <h1>Hello</h1>
+                            <p>Masukin Filenya disini yha !!!</p>
+                            <div class="upload-file">
+                                <input type="file" accept="application/pdf" name="file" placeholder="Masukan File PDF"
+                                    required multiple>
+                                <p>Drag your files here </p>
+                            </div>
+                            <div class="tombol">
+                                <button class="custom-btn btn-8" type="submit"><span>Simpan</span></button>
+                                <a class="custom-a a-6" href="file_pdf/PDF_File.pdf"><span>Lihat</span></a>
+                                <a class="custom-a btn-7" download="PDF_File.pdf"
+                                    href="file_pdf/PDF_File.pdf"><span>Download</span></a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
